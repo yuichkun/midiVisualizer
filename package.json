@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "browserify ./src/app.js -o ./public/bundle.js && open public/index.html",
+    "start": "browserify ./src/app.js -o ./public/bundle.js -d && open public/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Yuichi Yogo",
   "license": "ISC",
   "dependencies": {
-    "p5": "^0.5.5"
+    "p5": "^0.5.5",
+    "web-midi-api": "^1.4.4"
   },
   "devDependencies": {}
 }
