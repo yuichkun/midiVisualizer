@@ -24,6 +24,7 @@ function onMidiMessage(event){
   if(message >= 128 && message <= 143){
     var port = message - 128;
     console.log(`PORT: ${port} NOTEOFF: ${pitch}`);
+    sketch.noteOff(port, pitch);
   }
 }
 
