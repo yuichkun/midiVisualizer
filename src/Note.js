@@ -19,8 +19,6 @@ class Note{
 
     var revColor = p.color(reverseColor(this.color));
 
-
-
     pg.push();
     pg.translate(0, p.height);
     var xUnit = p.width / 16;
@@ -74,6 +72,7 @@ function adjustColor(cl, i) {
   var h = cl[0];
   var s = cl[1];
   var l = cl[2] - (cl[2] / i);
+  // var l = cl[2] / i;
   var a = cl[3];
   adjustedColor = [h,s,l,a];
   return adjustedColor;
